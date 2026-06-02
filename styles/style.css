@@ -1,0 +1,88 @@
+/* styles/style.css */
+
+/* Base Clean Corporate Theme */
+.stApp {
+    background-color: #f8fafc !important;
+    color: #1e293b !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Form Titles & Sidebar Elements text colors */
+.stApp p, .stApp label, [data-testid="stWidgetLabel"] p {
+    color: #334155 !important;
+    font-weight: 600 !important;
+}
+
+/* Beautiful Corporate Gradient Main Header Title */
+h1 {
+    font-weight: 800 !important;
+    background: linear-gradient(45deg, #1e3a8a, #2563eb, #0284c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+    margin-bottom: 5px !important;
+}
+
+.subtitle-text {
+    color: #475569 !important;
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Custom Sidebar Design styling */
+section[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+    border-right: 1px solid #e2e8f0 !important;
+}
+
+.evaluator-box {
+    background-color: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    margin-top: 15px;
+}
+.evaluator-box h4 {
+    margin: 0 0 8px 0;
+    color: #1e3a8a !important;
+}
+.evaluator-box p {
+    font-size: 0.85rem;
+    color: #475569 !important;
+    line-height: 1.4;
+}
+
+/* Custom Progress Bar Colors to match blue accent track */
+div[data-testid="stMetricValue"] {
+    font-weight: 700 !important;
+    color: #1e3a8a !important;
+}
+
+div[data-baseweb="progress-bar"] > div {
+    background-color: #2563eb !important;
+}
+
+/* Chat Block Custom Cards styling */
+div[data-testid="stChatMessage"]:has(div[data-testid="stChatMessageAvatarUser"]) {
+    background-color: #eff6ff !important;
+    border: 1px solid #bfdbfe !important;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+div[data-testid="stChatMessage"]:has(div[data-testid="stChatMessageAvatarAssistant"]) {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+/* Underline separators for AI reports headings */
+.stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
+    color: #1e3a8a !important;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 4px;
+    margin-top: 1.8rem !important;
+}
