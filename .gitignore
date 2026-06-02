@@ -1,0 +1,4 @@
+.env
+startup_history.db
+__pycache__/
+*.pyc
